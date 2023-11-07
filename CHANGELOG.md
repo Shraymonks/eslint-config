@@ -1,5 +1,11 @@
 # @shraymonks/eslint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- 38d2081: Add parserOptions.project=true
+
 ## 1.0.2
 
 ### Patch Changes

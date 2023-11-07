@@ -1,6 +1,6 @@
 {
   "name": "@shraymonks/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint config",
   "author": "Raymond Ha <raymond@shraymonks.com> (https://raymondha.com)",
   "repository": {
