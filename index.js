@@ -14,6 +14,7 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 'latest',
+    project: true,
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
