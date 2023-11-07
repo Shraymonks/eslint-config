@@ -1,5 +1,12 @@
 # @shraymonks/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- aa864c9: Disable type-aware linting for js files
+- a1c9671: Add parserOptions.tsconfigRootDir: \_\_dirname
+
 ## 1.0.3
 
 ### Patch Changes
