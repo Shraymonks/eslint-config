@@ -1,5 +1,11 @@
 # @shraymonks/eslint-config
 
+## 1.1.1
+
+### Patch Changes
+
+- b99719f: Remove parserOptions.tsconfigRootDir
+
 ## 1.1.0
 
 ### Minor Changes
