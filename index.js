@@ -8,6 +8,12 @@ module.exports = {
     'plugin:@typescript-eslint/stylistic-type-checked',
     'prettier',
   ],
+  overrides: [
+    {
+      extends: ['plugin:@typescript-eslint/disable-type-checked'],
+      files: ['./**/*.?js'],
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
