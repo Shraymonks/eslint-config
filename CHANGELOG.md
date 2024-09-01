@@ -1,5 +1,11 @@
 # @shraymonks/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- a22d3b5: Remove .changeset from package
+
 ## 2.0.0
 
 ### Major Changes
