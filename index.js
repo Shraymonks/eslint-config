@@ -1,27 +1,42 @@
-module.exports = {
-  env: {
-    es2024: true,
-  },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/strict-type-checked',
-    'plugin:@typescript-eslint/stylistic-type-checked',
-    'prettier',
-  ],
-  overrides: [
-    {
-      extends: ['plugin:@typescript-eslint/disable-type-checked'],
-      files: ['./**/*.?js'],
+import eslint from '@eslint/js';
+import globals from 'globals';
+import prettier from 'eslint-config-prettier';
+import react from 'eslint-plugin-react';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+  {
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    ...react.configs.flat.recommended,
+    languageOptions: {
+      ...react.configs.flat.recommended.languageOptions,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
+      },
     },
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
-    ecmaVersion: 'latest',
-    project: true,
-    sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
-};
+  prettier,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ['*.js'],
+          defaultProject: './tsconfig.json',
+        },
+      },
+    },
+  },
+);

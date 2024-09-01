@@ -3,6 +3,8 @@
   "version": "1.1.1",
   "description": "ESLint config",
   "author": "Raymond Ha <raymond@shraymonks.com> (https://raymondha.com)",
+  "type": "module",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shraymonks/eslint-config.git"
@@ -13,16 +15,14 @@
     "release": "changeset publish"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^6.9.1",
-    "eslint-config-prettier": "^9.0.0"
+    "@eslint/js": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "eslint": "^8.53.0"
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "eslint": "^8.53.0"
+    "@changesets/cli": "^2.27.7",
+    "eslint": "^9.9.1"
   }
 }
