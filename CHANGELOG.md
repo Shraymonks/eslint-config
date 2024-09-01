@@ -1,5 +1,11 @@
 # @shraymonks/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- 0ba89f4: Update to eslint 9
+
 ## 1.1.1
 
 ### Patch Changes
