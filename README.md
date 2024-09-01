@@ -4,7 +4,7 @@ My eslint config.
 
 ## Installation
 
-```
+```console
 pnpm add -D @shraymonks/eslint-config
 ```
 
@@ -12,7 +12,7 @@ pnpm add -D @shraymonks/eslint-config
 
 Add to your `eslint.config.js`:
 
-```
+```js
 import config from '@shraymonks/eslint-config';
 
 export default [
