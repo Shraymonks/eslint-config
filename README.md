@@ -13,9 +13,16 @@ pnpm add -D @shraymonks/eslint-config
 Add to your `eslint.config.js`:
 
 ```js
-import config from '@shraymonks/eslint-config';
+import { base } from '@shraymonks/eslint-config';
 
 export default [
-  ...config,
+  ...base,
 ];
 ```
+
+## Available configs
+
+- `base`
+- `browser`
+- `node`
+- `react`
