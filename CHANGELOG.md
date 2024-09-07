@@ -1,5 +1,11 @@
 # @shraymonks/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- 8660ee7: Export different configs
+
 ## 2.0.1
 
 ### Patch Changes
