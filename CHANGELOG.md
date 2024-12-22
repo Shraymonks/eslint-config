@@ -1,5 +1,12 @@
 # @shraymonks/eslint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- a682327: Fix linting with .{c,m,}js files
+- 029c663: Fix duplicate react var error
+
 ## 3.0.0
 
 ### Major Changes
