@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import globals from 'globals';
 import prettier from 'eslint-config-prettier';
-import react from '@eslint-react/eslint-plugin';
+import reacteslint from '@eslint-react/eslint-plugin';
 import tseslint from 'typescript-eslint';
 
 export const base = tseslint.config(
@@ -35,5 +35,5 @@ export const node = tseslint.config(...base, {
 
 export const react = tseslint.config(...browser, {
   files: ['**/*.{ts,tsx}'],
-  ...react.configs['recommended-type-checked'],
+  ...reacteslint.configs['recommended-type-checked'],
 });
