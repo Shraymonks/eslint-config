@@ -13,11 +13,15 @@ export const base = tseslint.config(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['*.js'],
+          allowDefaultProject: ['*.{c,m,}js'],
           defaultProject: './tsconfig.json',
         },
       },
     },
+  },
+  {
+    files: ['**/*.{c,m,}js'],
+    extends: [tseslint.configs.disableTypeChecked],
   },
 );
 
